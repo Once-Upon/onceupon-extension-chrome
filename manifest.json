@@ -1,0 +1,19 @@
+{
+  "name": "Once Upon",
+  "description": "Redirect from Etherscan to Once Upon (onceupon.gg)",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://etherscan.io/*"],
+      "js": ["redirect.js"]
+    }
+  ],
+  "icons": {
+    "16": "/images/ou16.png",
+    "32": "/images/ou32.png",
+    "48": "/images/ou48.png",
+    "128": "/images/ou128.png"
+  }
+}
