@@ -27,35 +27,35 @@ function redirect() {
   // Blocks
   if (location && location.indexOf("https://etherscan.io/block/") !== -1) {
     const blockNumber = location.split("https://etherscan.io/block/")[1];
-    window.location.href = `https://www.onceupon.gg/finder/b${blockNumber}`;
+    window.location.href = `https://www.onceupon.gg/finder/b${blockNumber}?ref=etherscan`;
     return;
   }
 
   // Block Transactions
   if (location && location.indexOf("https://etherscan.io/txs?block=") !== -1) {
     const blockNumber = location.split("https://etherscan.io/txs?block=")[1];
-    window.location.href = `https://www.onceupon.gg/finder/b${blockNumber}`;
+    window.location.href = `https://www.onceupon.gg/finder/b${blockNumber}?ref=etherscan`;
     return;
   }
 
   // Transactions
   if (location && location.indexOf("https://etherscan.io/tx/") !== -1) {
     const txHash = location.split("https://etherscan.io/tx/")[1];
-    window.location.href = `https://www.onceupon.gg/finder/${txHash}`;
+    window.location.href = `https://www.onceupon.gg/finder/${txHash}?ref=etherscan`;
     return;
   }
 
   // Address
   if (location && location.indexOf("https://etherscan.io/address/") !== -1) {
     const address = location.split("https://etherscan.io/address/")[1];
-    window.location.href = `https://www.onceupon.gg/finder/${address}`;
+    window.location.href = `https://www.onceupon.gg/finder/${address}?ref=etherscan`;
     return;
   }
 
   // Token
   if (location && location.indexOf("https://etherscan.io/token/") !== -1) {
     const address = location.split("https://etherscan.io/token/")[1];
-    window.location.href = `https://www.onceupon.gg/finder/${address}`;
+    window.location.href = `https://www.onceupon.gg/finder/${address}?ref=etherscan`;
     return;
   }
 }
